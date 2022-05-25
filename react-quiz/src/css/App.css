@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+    margin:0;
+}
+#root{
+    position: relative;
+    width:400px;
+    height: 650px;
+    
+}
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/*-----------------------------------------------------------------------
+                        Start Screen
+-------------------------------------------------------------------------*/
+.main-screen{
+    position: relative;
+    width: 100%;
+    height: 100%;       
+}
+
+.head-line{
+    width: 100%;
+    padding-top: 14px;
+    padding-right: 25px;
+    padding-left: 30px;
+    padding-bottom:12px;
+    background: #fff;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-line__arrow-right{
+    padding-top:12px;
+}
+
+.page-main{
+    width:100%;
+    background: linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+    padding-top:67px;
+    
+}
+
+.page-main__image{
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-main__image>img{
+    display: block;
+}
+
+.page-main__title{
+    display: inline;
+    text-align: center;
+}
+
+.page-main__title>h2{
+    font-weight: 700;
+    line-height: 31px;
+    font-size: 24px;
+    margin: 0 auto;
+    color: #2196F3;
+}
+
+.page-main__text{
+    display: inline-block;
+    text-align: center; 
+    padding-top: 22px;
+}
+
+.page-main__text>main{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 174%;
+    color: #3A4850;
+}
+
+.page-main__button{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+.page-main__button>button{
+    padding: 13px 48px;
+    background: linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.03);
+    border-radius: 24px;
+}
+
+/*----------------------------------------------------------------------
+                        Quiz
+------------------------------------------------------------------------*/
+.Quiz{
+    position: relative;
+    width: 100%;
+    height: 100%;       
+}
+
+.head-line__arrow-left{
+
+}
+
+
+.head-line__question-number{
+
+}
