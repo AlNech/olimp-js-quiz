@@ -2,12 +2,13 @@ export const data = [
     {
         quiestion: "You are looking for",
         answer: ["Women's style","Men's style"],
-
+        bottomText: "I'd like to see both",
+        
     },
     {
         quiestion: "What type of glasses are you looking for?",
         answer: ["Eyeglasses","Sunglasses"],
-        flagPathPicture: ["men","women"]
+        flagPathPicture: ["male","female"]
     },
     {
         quiestion: "Do you need vision correction?",

@@ -7,6 +7,14 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
+    switch(action.type){
+        case "NEXT_QUESTION": {
+            return{
+                ...state,
+                currentQuestionIndex: state.currentQuestionIndex + 1,
+            };
+        }
+    }
     return state;
 };
 

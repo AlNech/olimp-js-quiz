@@ -13,7 +13,7 @@ const StartScreen = () => {
         <div className="main-screen">
                 <div className="head-line">
                     <div className="head-line__logo"><img src={logo} alt="logo" width="120px" height="38px"></img></div>
-                    <div className="head-line__arrow-right"><button><img src={arrow_right} alt="right" width="10px" height="18px"></img></button></div>
+                    <div className="head-line__arrow-right"><button onClick={() => setQuizState("quiz")}><img src={arrow_right} alt="right" width="10px" height="18px" ></img></button></div>
                 </div>
                 <div className="page-main">
                     <div className="page-main__image"><img src={main_image} alt="image-glasses" width="312px" height="153px"></img></div>
