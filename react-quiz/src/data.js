@@ -1,28 +1,33 @@
 export const data = [
     {
         quiestion: "You are looking for",
-        answer: ["Women's style","Men's style"],
+        answer: {option:["Women's style","Men's style"]},
         bottomText: "I'd like to see both",
-        
     },
     {
         quiestion: "What type of glasses are you looking for?",
-        answer: ["Eyeglasses","Sunglasses"],
-        flagPathPicture: ["male","female"]
+        answer: {option:["Eyeglasses","Sunglasses"]},
+        flagPathPicture: ["male","female","both"],
+        bottomText: "I want to see both",
     },
     {
         quiestion: "Do you need vision correction?",
-        answer:["yes","no"],
+        answer:{option:["yes","no"]},
+        bottomText: "Skip",
         flagAnswer: "yes",
         underQuiestion:"What do you need your glasses for?",
-        underAnswer: ["Near Vision", "Distance Vision","Multifocal/Progressive"]
+        underAnswer: ["Near Vision", "Distance Vision","Multifocal/Progressive"],
+        underbottomText: "Skip",
     },
+    /*
     {
         quiestion:"What’s your current frame size?",
         answer:{"Small":"42-48mm","Medium":"49-53mm","Large":"54-58mm"},
         flagAnswer:"",
+        bottomText: "I don't know",
         underQuiestion:"How wide would you say your face is?",
-        underAnswer:["Wider Than Average","Average","Narrower Than Average"]
+        underAnswer:["Wider Than Average","Average","Narrower Than Average"],
+        underbottomText: "I'm not sure",
     },
     {
         quiestion:"Would you like to protect your eyes from light emanating from screens?",
@@ -34,11 +39,12 @@ export const data = [
     {
         quiestion:"Every face shape has a perfect fit. What’s yours?",
         answer:["I have a long face","I have a round face", "In between"],
-
+        bottomText: "I don't know",
     },
     {
         quiestion:"How would you define your facial features?",
-        answer:["Sharp","Rounded","In between"]
+        answer:["Sharp","Rounded","In between"],
+        bottomText: "I don't know",
     },
     {
         quiestion:"Which frame style are you looking for?",
@@ -52,6 +58,6 @@ export const data = [
     {
         quiestion:"Choose your favorite brands",
         answer:[[],[],[]]
-    }
+    }*/
 
 ]

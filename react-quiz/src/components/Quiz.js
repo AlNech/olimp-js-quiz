@@ -1,20 +1,27 @@
 import { useState, useContext } from "react";
 import React from "react";
 import Question from "./Question";
+import Answer from "./Answer";
 import exit from "../img/exit.svg";
 import arrow_left from "../img/arrow_left.svg";
 import '../css/App.css';
 
 import { CurrentContext} from "../contexts/CurrentContext";
 
+function displayAnswer(props, index){
+    
+    return props.data[index].answer.option;
+};
 
+function displaybottomText(props, index){
+   let textBottom = props.data[index].bottomText;  
+   if (textBottom){
+       return <div className="skip">{textBottom}</div>
+   }
+};
 
 const Quiz = () => {
     const [currQuestion,setCurrQuestion] = useContext(CurrentContext);
-
-    
-    
-    console.log('curr', currQuestion);
 
     return(
         
@@ -27,9 +34,9 @@ const Quiz = () => {
                 <div className="progress-line" ></div>
                 <div className="content">
                     <div className="content-question"><Question/></div>
-                    <div className="content-answers"></div>
+                    <div className="content-answers">{displayAnswer(currQuestion,currQuestion.currentQuestionIndex)}</div>
                 </div> 
-                <div className="skip">dd</div>
+                {displaybottomText(currQuestion,currQuestion.currentQuestionIndex)}
             </div>
 
     );
