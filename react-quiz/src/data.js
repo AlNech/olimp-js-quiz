@@ -1,7 +1,7 @@
 export const data = [
     {
         quiestion: "You are looking for",
-        answer: {option:["Women's style","Men's style"]},
+        answer: {option:["Women's style","Men's style"], id: [5, 4]},
         bottomText: "I'd like to see both",
     },
     {

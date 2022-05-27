@@ -8,17 +8,24 @@ import '../css/App.css';
 
 import { CurrentContext} from "../contexts/CurrentContext";
 
-function displayAnswer(props, index){
-    
-    return props.data[index].answer.option;
+function doIndexOption(indexoption){
+    let indOpt = indexoption;
+    return indOpt;
 };
 
-function displaybottomText(props, index){
+function displayAnswer(props, index){
+    let arrOption = props.data[index].answer.option;
+    let answer = arrOption.map(x => {return <Answer props={x} indexOption={doIndexOption(arrOption.indexOf(x))} key={arrOption.indexOf(x)}></Answer>});
+    return answer;
+};
+
+function displaybottomText(props, index, set){
    let textBottom = props.data[index].bottomText;  
    if (textBottom){
-       return <div className="skip">{textBottom}</div>
+       return <div className="skip" onClick={() => {set({type: "NEXT_QUESTION"})}}>{textBottom}</div>
    }
 };
+
 
 const Quiz = () => {
     const [currQuestion,setCurrQuestion] = useContext(CurrentContext);
@@ -36,7 +43,7 @@ const Quiz = () => {
                     <div className="content-question"><Question/></div>
                     <div className="content-answers">{displayAnswer(currQuestion,currQuestion.currentQuestionIndex)}</div>
                 </div> 
-                {displaybottomText(currQuestion,currQuestion.currentQuestionIndex)}
+                {displaybottomText(currQuestion,currQuestion.currentQuestionIndex, setCurrQuestion)}
             </div>
 
     );
