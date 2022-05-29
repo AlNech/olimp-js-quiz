@@ -1,13 +1,15 @@
 export const data = [
     {
         quiestion: "You are looking for",
-        answer: {option:["Women's style","Men's style"], id: [5, 4]},
+        answer: {option:["Women's style","Men's style"], id: [5, 4],imgPath:["/img/woman.svg","/img/man.svg"] },
         bottomText: "I'd like to see both",
+
     },
     {
         quiestion: "What type of glasses are you looking for?",
-        answer: {option:["Eyeglasses","Sunglasses"]},
-        flagPathPicture: ["male","female","both"],
+        answer: {option:["Eyeglasses","Sunglasses"],id: [], imgPathmale:["/img/male/Eyeglasses.svg","/img/male/Sunglasses.svg"],
+            imgPathfemale:["/img/female/Eyeglasses.svg","/img/female/Sunglasses.svg"],imgPathboth:["",""],
+        },
         bottomText: "I want to see both",
     },
     {
