@@ -14,7 +14,8 @@ export const data = [
     },
     {
         quiestion: "Do you need vision correction?",
-        answer:{option:["yes","no"]},
+        answer:{option:["yes","no"],id: [], imgPathmale:["/img/male/Eyeglasses.svg","/img/male/Sunglasses.svg"],
+        imgPathfemale:["/img/female/Eyeglasses.svg","/img/female/Sunglasses.svg"],imgPathboth:["",""],},
         bottomText: "Skip",
         flagAnswer: "yes",
         underQuiestion:"What do you need your glasses for?",

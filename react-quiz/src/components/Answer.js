@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import { CurrentContext} from "../contexts/CurrentContext";
 import '../css/App.css';
-
+import {QuizContext} from "../contexts/QuizContexts";
 
 function flagSex(elem1){
     let flag = "both";
@@ -31,12 +31,19 @@ function pathImg(elem1, props, elem2, elem3){
 
 const Answer = ({props, index}) => {
     const [currQuestion,setCurrQuestion] = useContext(CurrentContext);
+    const {quizState, setQuizState} = useContext(QuizContext);
+
     let flag;
     return (<div>
         <button
           onClick={() => {
-            setCurrQuestion({type: "NEXT_QUESTION"}); 
+            if (!currQuestion.showFinal ){setCurrQuestion({type: "NEXT_QUESTION"})}
+            else{
+                setQuizState("end");
+            };
+
             if (currQuestion.currentQuestionIndex == 0){flag = (flagSex(index));};
+            
         }}>
             <img src={process.env.PUBLIC_URL + pathImg(currQuestion.currentQuestionIndex, currQuestion, index, flag)} height="50px" width="50px"></img>
             {props}

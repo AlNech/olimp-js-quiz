@@ -3,15 +3,19 @@ import {data} from '../data';
 
 const initialState = {
     data,
+    showFinal: false,
     currentQuestionIndex: 0,
 };
 
 const reducer = (state, action) => {
     switch(action.type){
         case "NEXT_QUESTION": {
+            const showFinal = state.currentQuestionIndex === state.data.length - 1;
+            const currentQuestionIndex = showFinal ? state.currentQuestionIndex : state.currentQuestionIndex + 1
             return{
                 ...state,
-                currentQuestionIndex: state.currentQuestionIndex + 1,
+                currentQuestionIndex,
+                showFinal,
             };
         }
     }
