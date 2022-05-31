@@ -9,7 +9,7 @@ const StartScreen = () => {
     return (
         <div className="main-screen">
                 <div className="head-line">
-                    <div className="head-line__logo"><img src={process.env.PUBLIC_URL + "/img/logo.svg"} alt="logo" width="120px" height="38px"></img></div>
+                    <div className="head-line__logo"><img src={process.env.PUBLIC_URL + "/img/logo.svg"} alt="logo" ></img></div>
                     <div className="head-line__arrow-right">
                         <button onClick={() => setQuizState("quiz")}>
                             <img src={process.env.PUBLIC_URL + "/img/arrow_right.svg"} alt="right" width="10px" height="18px" ></img>

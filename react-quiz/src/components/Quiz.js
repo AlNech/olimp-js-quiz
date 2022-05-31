@@ -24,7 +24,7 @@ function displaybottomText(props, index, set1, set2){
             set2("end");
            }
         }
-    }>{textBottom}</div>
+    }><p className="skip-text">{textBottom}</p></div>
    }
 };
 
@@ -41,7 +41,7 @@ const Quiz = () => {
                     <div className="head-line-quiz">
                             <div className="head-line__arrow-left"><button><img src={process.env.PUBLIC_URL + "/img/arrow_left.svg"} alt="left" width="8px" height="14px"></img></button></div>
                             <div className="head-line__question-number">{currQuestion.currentQuestionIndex + 1}/{currQuestion.data.length}</div>
-                            <div className="head-line__exit"><button><img src={process.env.PUBLIC_URL + "/img/exit.svg"} alt="exit" width="13px" height="13px"></img></button></div>
+                            <div className="head-line__exit"><button><img src={process.env.PUBLIC_URL + "/img/exit.svg"} alt="exit" ></img></button></div>
                         </div>
                     <div className="progress-line" ></div>
                     <div className="content">

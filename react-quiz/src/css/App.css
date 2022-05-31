@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -35,17 +35,21 @@ button{
 
 .head-line{
     width: 100%;
-    padding-top: 14px;
-    padding-right: 25px;
-    padding-left: 30px;
-    padding-bottom:12px;
+    padding-top: 0.7rem;
+    padding-right: 1.25rem;
+    padding-left: 1.5rem;
+    padding-bottom: 0.6rem;
     background: #fff;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
 }
+.head-line__logo{
+    width: 6rem;
+    height: 1.9rem;
+}
 .head-line__arrow-right{
-    padding-top:12px;
+    padding-top: 0.4rem;
 }
 
 .page-main{
@@ -63,6 +67,7 @@ button{
 }
 
 .page-main__image>img{
+    
     display: block;
 }
 
@@ -123,6 +128,10 @@ button{
     width: 100%;
     height: 100%;     
 }
+.page-quiz{
+    display: flex;
+    flex-direction: column;
+}
 .head-line-quiz{
     width: 100%;
     padding-top: 0.9rem;
@@ -132,8 +141,11 @@ button{
     background: #fff;
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between; 
-    
+    justify-content: space-between;    
+}
+.head-line__exit>button>img{
+    width: 0.65rem;
+    height: 0.65rem;
 }
 
 .head-line__question-number{
@@ -150,7 +162,6 @@ button{
 .progress-line{
     height: 0.4rem;
     background:red;
-    margin-bottom: 2.3rem;
 }
 .content{
 
@@ -165,8 +176,7 @@ button{
 .content-answer{
     padding-top: 1.04rem;
 }
-.skip{
-    
+.skip{   
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -175,8 +185,92 @@ button{
     text-align: center;
     text-decoration-line: underline;
     color: #3A4850;
-    display: flex;
+    
     align-items: flex-end;
+}
+
+/*---------------------------------------------------------------
+                Final Screen
+-----------------------------------------------------------------*/
+.page-final{
+    width:100%;
+    background: linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.page-final__image{
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+.page-final__image>img{
+    display: block;
+    width: 9.5rem;
+    height: 9.5rem;
+}   
+.head-line__exit_final{
+    padding-top: 0.2rem;
+}
+.head-line__exit_final>button>img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.page-final__title{
+    padding: 0rem 1.5rem;
+    display: inline;
+    text-align: center;
+}
+
+.page-final__title>h2{
+    font-weight: 700;
+    line-height: 31px;
+    font-size: 20px;
+    margin: 0 auto;
+    color: #2196F3;
+}
+
+.page-final__text{
+    display: inline-block;
+    text-align: center; 
+    padding-top: 1rem;
+}
+
+.page-final__text>main{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 174%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: #3A4850;
+}
+
+.page-final__button{
+    display: flex;
+    padding-top: 2.4rem;
+    align-items: center;
     justify-content: center;
-    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    color: #fff;
+}
+.page-final__button>button{
+    padding: 0.65rem 3.4rem;
+    background: linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.03);
+    border-radius: 24px;
+}
+.footer-final{
+    padding-top: 3rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #5B6971;
 }

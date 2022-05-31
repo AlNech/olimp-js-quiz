@@ -5,6 +5,8 @@ const initialState = {
     data,
     showFinal: false,
     currentQuestionIndex: 0,
+    underQuiestion: {},
+    underAnswer: {},
 };
 
 const reducer = (state, action) => {
@@ -16,6 +18,14 @@ const reducer = (state, action) => {
                 ...state,
                 currentQuestionIndex,
                 showFinal,
+            };            
+        }
+        case "UNDER_QUESTION": {
+            const showUnderQuestion = state.data[state.currentQuestionIndex].underQuiestion;
+            const showAnswerQuestion = state.data[state.currentQuestionIndex].underAnswer;
+            return{
+                showUnderQuestion,
+                showAnswerQuestion,
             };
         }
     }

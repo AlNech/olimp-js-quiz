@@ -1,25 +1,25 @@
-export const data = [
+export let data = [
     {
         quiestion: "You are looking for",
         answer: {option:["Women's style","Men's style"], id: [5, 4],imgPath:["/img/woman.svg","/img/man.svg"] },
         bottomText: "I'd like to see both",
-
+        flagSex: "",
     },
     {
         quiestion: "What type of glasses are you looking for?",
-        answer: {option:["Eyeglasses","Sunglasses"],id: [], imgPathmale:["/img/male/Eyeglasses.svg","/img/male/Sunglasses.svg"],
+        answer: {option:["Eyeglasses","Sunglasses"],id: [210, 211], imgPathmale:["/img/male/Eyeglasses.svg","/img/male/Sunglasses.svg"],
             imgPathfemale:["/img/female/Eyeglasses.svg","/img/female/Sunglasses.svg"],imgPathboth:["",""],
         },
         bottomText: "I want to see both",
     },
     {
         quiestion: "Do you need vision correction?",
-        answer:{option:["yes","no"],id: [], imgPathmale:["/img/male/Eyeglasses.svg","/img/male/Sunglasses.svg"],
-        imgPathfemale:["/img/female/Eyeglasses.svg","/img/female/Sunglasses.svg"],imgPathboth:["",""],},
+        answer:{option:["yes","no"], imgPathmale:["",""],
+        imgPathfemale:["",""],imgPathboth:["",""],},
         bottomText: "Skip",
         flagAnswer: "yes",
         underQuiestion:"What do you need your glasses for?",
-        underAnswer: ["Near Vision", "Distance Vision","Multifocal/Progressive"],
+        underAnswer: {option:["Near Vision", "Distance Vision","Multifocal/Progressive"], id: [6, 6, 7]},
         underbottomText: "Skip",
     },
     /*
