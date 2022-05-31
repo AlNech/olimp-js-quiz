@@ -30,27 +30,44 @@ function class_for_page(indexcurr){
         return "class_for_1-2_page";
     }
     if ((indexcurr==2)||(indexcurr==4)){
-        return "class_for_3-5_page"
+        return "class_for_3-5_page";
+    };
+    if (indexcurr==3){
+        return "class_for_4_page";
     }
+    if (indexcurr==5){
+        return "class_for_6_page";
+    }
+    if (indexcurr==6){
+        return "class_for_7_page";
+    }
+    if (indexcurr==8){
+        return "class_for_9_page";
+    }
+}
+
+function displayAnswerforNOT_8_10_page(elem1, setCurrQuestion, setQuizState, indexcurr , index, currQuestion,props){
+    if ((elem1!=7)||(elem1!=9)){
+        return (<button className={class_for_page(indexcurr)}
+        onClick={() => {
+          if (!elem1 ){
+                  setCurrQuestion({type: "NEXT_QUESTION"})}       
+          else{
+              setQuizState("end");
+          };
+          if ((indexcurr=== 0) && (index===0)){currQuestion.data[0].flagSex = "female"; };
+          if ((indexcurr === 0) && (index===1)){currQuestion.data[0].flagSex = "male";};         
+      }}>
+          
+          <div className="img_answer"> {displayIMG(indexcurr,currQuestion, index, currQuestion.data[0].flagSex)} </div>
+          <div className="text_answer">{props}</div>
+      </button>)
+    }
+    
 }
 function displayAnswer(elem1, setCurrQuestion, setQuizState, indexcurr , index, currQuestion,props){
     
-    return (<div className="answer">
-        <button className={class_for_page(indexcurr)}
-          onClick={() => {
-            if (!elem1 ){
-                    setCurrQuestion({type: "NEXT_QUESTION"})}       
-            else{
-                setQuizState("end");
-            };
-            if ((indexcurr=== 0) && (index===0)){currQuestion.data[0].flagSex = "female"; };
-            if ((indexcurr === 0) && (index===1)){currQuestion.data[0].flagSex = "male";};         
-        }}>
-            
-            <div className="img_answer"> {displayIMG(indexcurr,currQuestion, index, currQuestion.data[0].flagSex)} </div>
-            <div className="text_answer">{props}</div>
-        </button>
-        </div>
+    return (<div className="answer">{displayAnswerforNOT_8_10_page(elem1, setCurrQuestion, setQuizState, indexcurr , index, currQuestion,props)}</div>
     )
 };
 

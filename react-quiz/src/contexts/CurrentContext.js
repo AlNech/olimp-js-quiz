@@ -4,6 +4,7 @@ import {data} from '../data';
 const initialState = {
     data,
     showFinal: false,
+    showStart: false,
     currentQuestionIndex: 0,
     showUnderQuestion: false,
 };
@@ -19,11 +20,14 @@ const reducer = (state, action) => {
                 showFinal,
             };            
         }
-        case "UNDER_QUESTION":{
-            const showUnderQuestion = Boolean(state.data[state.currentQuestionIndex].underQuestion);
-            return {
-                showUnderQuestion,
-            }
+        case "PREV_QUESTION": {
+            const showStart = state.currentQuestionIndex === 0;
+            const currentQuestionIndex = showStart ? state.currentQuestionIndex : state.currentQuestionIndex - 1
+            return{
+                ...state,
+                currentQuestionIndex,
+                showStart
+            };            
         }
 
     }

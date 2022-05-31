@@ -13,7 +13,7 @@ function displayQuestion(props, elem1){
 
 function for_4_page(currQuestion){
     if (currQuestion.currentQuestionIndex == 3){
-    return <div className="img_frame"><img src={process.env.PUBLIC_URL + "img/sizes.svg"}></img></div>}
+    return <div className="img_frame"><img src={process.env.PUBLIC_URL + "img/sizes.svg"} ></img></div>}
 };
 
 const Question = () => {

@@ -21,7 +21,7 @@ export let data = [
         underbottomText: "Skip",
     },
     {
-        quiestion:"What’s your current</br> frame size?",
+        quiestion:"What’s your current frame size?",
         answer:{option: ["Small","Medium","Large"],imgPathmale:["/img/small.svg","/img/medium.svg","/img/large.svg"],
         imgPathfemale:["/img/small.svg","/img/medium.svg","/img/large.svg"],imgPathboth:["/img/small.svg","/img/medium.svg","/img/large.svg"]},
         bottomText: "I don't know",
@@ -44,17 +44,16 @@ export let data = [
         quiestion:"How would you define your facial features?",
         answer:{option:["Sharp","Rounded","In between"],imgPathmale:["",""],imgPathfemale:["",""],imgPathboth:["",""],},
         bottomText: "I don't know",
-    },
-    /*
+    },/*
     {
         quiestion:"Which frame style are you looking for?",
         help:"You can pick more than one.",
-        answer:[["Rectangle","Browline","Aviator","Geometric"],["Wayframe","Round","Oval","Oversized"],["Cat Eye","Rimless","Square","Wrap"]]
-    },
+        answer:{option:[["Rectangle","Browline","Aviator","Geometric"],["Wayframe","Round","Oval","Oversized"],["Cat Eye","Rimless","Square","Wrap"]]
+    },*/
     {
         quiestion:"Are you looking for any particular eyewear brands?",
-        answer:["Yes, I have some in mind","No brand isn't important"]
-    },
+        answer:{option:["Yes, I have some in mind","No brand isn't important"]}
+    },/*
     {
         quiestion:"Choose your favorite brands",
         answer:[[],[],[]]

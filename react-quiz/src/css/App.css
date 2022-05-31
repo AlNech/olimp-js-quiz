@@ -178,6 +178,7 @@ button{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 1.2rem;
 }
 .question{
     font-family: 'Open Sans', sans-serif;
@@ -191,13 +192,14 @@ button{
 .content-answer{
     padding-top: 1.04rem;
 }
+
 .class_for_1-2_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 14px;
     width: 13.2rem;
     height: 6.2rem;
-    margin-top: 0.65rem;
+    margin-top: 0.65rem; 
 }
 .class_for_3-5_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
@@ -205,14 +207,79 @@ button{
     border-radius: 14px;
     width: 13.2rem;
     height: 6.2rem;
-    margin-top: 0.65rem;
+    margin-top: 0.65rem; 
     text-align: center;
 }
-.{
+.class_for_4_page{
+    border: 1px solid rgba(231, 235, 237, 0.80141);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 15.9rem;
+    height: 3rem;
+    padding: 0.7rem 1rem;
+    margin-top: 0.5rem;
+}
+.class_for_4_page>.text_answer{
+    padding-right: 6rem;
+}
+.class_for_4_page>.img_answer>img{
+    width: 88px;
+    height: 25px;
+}
+.img_frame>img{
+    padding-top: 0.8rem;
+    width: 15.9rem;
+    height: 6rem;
+}
+.class_for_7_page{
+    border: 1px solid rgba(231, 235, 237, 0.80141);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    width: 15.7rem;
+    height: 3.8rem;
+    margin-top: 0.65rem; 
+    text-align: center;
+}
+
+.class_for_6_page{
+    border: 1px solid rgba(231, 235, 237, 0.80141);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    width: 15.9rem;
+    height: 3.8rem;
+    padding: 1rem 1rem;
+    margin-top: 0.5rem;
+}
+.class_for_6_page>.img_answer>img{
+    width: 37px;
+    height: 50px;
+    margin-top: -0.4rem;
+    margin-right: 2rem;
+    margin-left: 0.2rem;
     
 }
+.class_for_6_page>.text_answer{
+    padding-top: 0.4rem;
+    padding-left: 1rem;;
+    margin-top: 0.1rem;
+    border-left: solid  1px #979797;
+}
+.class_for_9_page{
+    border: 1px solid rgba(231, 235, 237, 0.80141);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    width: 13.2rem;
+    height: 6.2rem;
+    margin-top: 0.65rem; 
+    text-align: center;
+}
 .skip-text{  
-    margin-top: 6.5rem; 
+    margin-top: 3.5rem;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;

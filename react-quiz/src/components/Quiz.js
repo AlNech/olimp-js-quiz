@@ -39,17 +39,17 @@ const Quiz = () => {
         <div className="Quiz">
                 <div className="page-quiz">
                     <div className="head-line-quiz">
-                            <div className="head-line__arrow-left"><button><img src={process.env.PUBLIC_URL + "/img/arrow_left.svg"} alt="left" width="8px" height="14px"></img></button></div>
+                            <div className="head-line__arrow-left"><button onClick={()=>{if (currQuestion.showStart){setQuizState("start")}else{setCurrQuestion({type:"PREV_QUESTION"})}}}><img src={process.env.PUBLIC_URL + "/img/arrow_left.svg"} alt="left" width="8px" height="14px"></img></button></div>
                             <div className="head-line__question-number">{currQuestion.currentQuestionIndex + 1}/{currQuestion.data.length}</div>
-                            <div className="head-line__exit"><button><img src={process.env.PUBLIC_URL + "/img/exit.svg"} alt="exit" ></img></button></div>
+                            <div className="head-line__exit"><button onClick={() =>{setQuizState("start")}}><img src={process.env.PUBLIC_URL + "/img/exit.svg"} alt="exit" ></img></button></div>
                         </div>
                     <div className="progress-line"><div className="progress" style={{width:((currQuestion.currentQuestionIndex + 1))*2.5 + 'rem'}}></div></div>
                     <div className="content">
                         <div className="content-question"><Question/></div>
                         <div className="content-answers">{displayAnswer(currQuestion,currQuestion.currentQuestionIndex)}</div>
-                        {displaybottomText(currQuestion,currQuestion.currentQuestionIndex, setCurrQuestion, setQuizState)}
+                        
                     </div> 
-                   
+                    {displaybottomText(currQuestion,currQuestion.currentQuestionIndex, setCurrQuestion, setQuizState)}
                 </div>
         </div>
     )
