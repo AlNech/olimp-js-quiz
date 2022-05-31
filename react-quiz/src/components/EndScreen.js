@@ -3,8 +3,12 @@ import React from "react";
 import { QuizContext } from "../contexts/QuizContexts";
 import '../css/App.css';
 
+
+
 const EndScreen = () => {
     const {quizState, setQuizState} = useContext(QuizContext);
+    
+
 
     return (
         <div className="final-screen">
@@ -15,7 +19,7 @@ const EndScreen = () => {
                             <img src={process.env.PUBLIC_URL + "/img/exit.svg"} alt="right" ></img>
                             </button></div>
                 </div>
-                <div className="progress-line"></div>
+                <div className="progress-line"><div className="progress" style={{width:100% + '' }}></div></div>
                 <div className="page-final">
                     <div className="page-final__image"><img src={process.env.PUBLIC_URL + "/img/send.svg"} alt="send"></img></div>
                     <div className="page-final__title"><h2>We've found some awesome frames for you!</h2></div>

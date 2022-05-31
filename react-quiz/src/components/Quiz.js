@@ -19,7 +19,7 @@ function displaybottomText(props, index, set1, set2){
    if (textBottom){
        return <div className="skip" 
        onClick={() => {
-           if (!props.showFinal ){set1({type: "NEXT_QUESTION"})}
+           if ((!props.showFinal) && (index=== 0)){set1({type: "NEXT_QUESTION"});props.data[0].flagSex = "";}
            else{
             set2("end");
            }
@@ -32,7 +32,7 @@ function displaybottomText(props, index, set1, set2){
 const Quiz = () => {
     const [currQuestion,setCurrQuestion] = useContext(CurrentContext);
     const {quizState, setQuizState} = useContext(QuizContext);
-
+    
 
     
     return (
@@ -43,12 +43,13 @@ const Quiz = () => {
                             <div className="head-line__question-number">{currQuestion.currentQuestionIndex + 1}/{currQuestion.data.length}</div>
                             <div className="head-line__exit"><button><img src={process.env.PUBLIC_URL + "/img/exit.svg"} alt="exit" ></img></button></div>
                         </div>
-                    <div className="progress-line" ></div>
+                    <div className="progress-line"><div className="progress" style={{width:((currQuestion.currentQuestionIndex + 1))*2.5 + 'rem'}}></div></div>
                     <div className="content">
                         <div className="content-question"><Question/></div>
                         <div className="content-answers">{displayAnswer(currQuestion,currQuestion.currentQuestionIndex)}</div>
+                        {displaybottomText(currQuestion,currQuestion.currentQuestionIndex, setCurrQuestion, setQuizState)}
                     </div> 
-                    {displaybottomText(currQuestion,currQuestion.currentQuestionIndex, setCurrQuestion, setQuizState)}
+                   
                 </div>
         </div>
     )

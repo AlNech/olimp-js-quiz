@@ -8,25 +8,22 @@ export let data = [
     {
         quiestion: "What type of glasses are you looking for?",
         answer: {option:["Eyeglasses","Sunglasses"],id: [210, 211], imgPathmale:["/img/male/Eyeglasses.svg","/img/male/Sunglasses.svg"],
-            imgPathfemale:["/img/female/Eyeglasses.svg","/img/female/Sunglasses.svg"],imgPathboth:["",""],
+            imgPathfemale:["/img/female/Eyeglasses.svg","/img/female/Sunglasses.svg"],imgPathboth:["/img/male/Eyeglasses.svg","/img/male/Sunglasses.svg"],
         },
         bottomText: "I want to see both",
     },
     {
         quiestion: "Do you need vision correction?",
-        answer:{option:["yes","no"], imgPathmale:["",""],
-        imgPathfemale:["",""],imgPathboth:["",""],},
+        answer:{option:["Yes","No"], imgPathmale:["",""],imgPathfemale:["",""],imgPathboth:["",""],},
         bottomText: "Skip",
-        flagAnswer: "yes",
-        underQuiestion:"What do you need your glasses for?",
+        underQuestion:"What do you need your glasses for?",
         underAnswer: {option:["Near Vision", "Distance Vision","Multifocal/Progressive"], id: [6, 6, 7]},
         underbottomText: "Skip",
     },
-    /*
     {
-        quiestion:"What’s your current frame size?",
-        answer:{"Small":"42-48mm","Medium":"49-53mm","Large":"54-58mm"},
-        flagAnswer:"",
+        quiestion:"What’s your current</br> frame size?",
+        answer:{option: ["Small","Medium","Large"],imgPathmale:["/img/small.svg","/img/medium.svg","/img/large.svg"],
+        imgPathfemale:["/img/small.svg","/img/medium.svg","/img/large.svg"],imgPathboth:["/img/small.svg","/img/medium.svg","/img/large.svg"]},
         bottomText: "I don't know",
         underQuiestion:"How wide would you say your face is?",
         underAnswer:["Wider Than Average","Average","Narrower Than Average"],
@@ -34,21 +31,21 @@ export let data = [
     },
     {
         quiestion:"Would you like to protect your eyes from light emanating from screens?",
-        answer:["yes","no"],
-        flagAnswer: "yes",
-        underQuiestion:"When you’re out and about, which shade of lenses do you prefer?",
+        answer:{option:["Yes","No"],imgPathmale:["",""],imgPathfemale:["",""],imgPathboth:["",""]},
+        underQuestion:"When you’re out and about, which shade of lenses do you prefer?",
         underAnswer: ["Dark Shade","Light Shade","Transitioning Shade"]
     },
     {
         quiestion:"Every face shape has a perfect fit. What’s yours?",
-        answer:["I have a long face","I have a round face", "In between"],
+        answer:{option:["I have a long face","I have a round face", "In between"],imgPathmale:["/img/male/long.svg","/img/male/round.svg","img/male/between.svg"],imgPathfemale:["/img/female/long.svg","/img/female/round.svg","img/female/between.svg"],imgPathboth:["/img/long.svg","/img/round.svg","img/between.svg"],},
         bottomText: "I don't know",
     },
     {
         quiestion:"How would you define your facial features?",
-        answer:["Sharp","Rounded","In between"],
+        answer:{option:["Sharp","Rounded","In between"],imgPathmale:["",""],imgPathfemale:["",""],imgPathboth:["",""],},
         bottomText: "I don't know",
     },
+    /*
     {
         quiestion:"Which frame style are you looking for?",
         help:"You can pick more than one.",
