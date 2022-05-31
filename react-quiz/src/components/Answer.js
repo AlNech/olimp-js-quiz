@@ -21,7 +21,7 @@ function pathImg(elem1, props, elem2, elem3){
 }
 
 function displayIMG(elem1, props, elem2, elem3){
-    if ((elem1 !== 2)&&(elem1 !== 4)&&(elem1 !== 6)){
+    if ((elem1 !== 2)&&(elem1 !== 4)&&(elem1 !== 6)&&(elem1 !== 7)){
         return (<img src={process.env.PUBLIC_URL + pathImg(elem1, props, elem2, elem3)}  width="50px" height="50px"></img>);
     }
 }
@@ -29,8 +29,8 @@ function class_for_page(indexcurr){
     if ((indexcurr==1)||(indexcurr==0)){
         return "class_for_1-2_page";
     }
-    if ((indexcurr==2)||(indexcurr==4)){
-        return "class_for_3-5_page";
+    if ((indexcurr==2)||(indexcurr==4)||(indexcurr==7)){
+        return "class_for_3-5-9_page";
     };
     if (indexcurr==3){
         return "class_for_4_page";

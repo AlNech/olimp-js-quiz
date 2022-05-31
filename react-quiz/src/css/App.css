@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
 
 *{
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -55,7 +57,13 @@ button{
 .page-main{
     width:100%;
     background: linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
-    padding-top:67px;
+    background: -moz-linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+    background: -webkit-linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+    background: -o-linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+    
+   
+
+    padding-top:3.35rem;
     
 }
 
@@ -66,8 +74,7 @@ button{
     justify-content: center;
 }
 
-.page-main__image>img{
-    
+.page-main__image>img{ 
     display: block;
 }
 
@@ -102,8 +109,8 @@ button{
 
 .page-main__button{
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 120px;
+    padding-top: 1.6rem;
+    padding-bottom: 6rem;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -114,8 +121,14 @@ button{
     color: #fff;
 }
 .page-main__button>button{
-    padding: 13px 48px;
+    padding: 0.65rem 2.4rem;
+    background: -moz-linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+    background: -webkit-linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+    background: -o-linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+    
     background: linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.03);
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.03);
     border-radius: 24px;
 }
@@ -169,7 +182,11 @@ button{
     position: relative;
     height: 100%;
     z-index: 1;
+    background: -moz-linear-gradient(290.47deg, #3797FA 11.33%, #45C9FF 83.66%);
+    background: -webkit-linear-gradient(290.47deg, #3797FA 11.33%, #45C9FF 83.66%);
+    background: -o-linear-gradient(290.47deg, #3797FA 11.33%, #45C9FF 83.66%);
     background: linear-gradient(290.47deg, #3797FA 11.33%, #45C9FF 83.66%);
+    
     border-radius: 13px;
 }
 .content{
@@ -196,14 +213,16 @@ button{
 .class_for_1-2_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 14px;
     width: 13.2rem;
     height: 6.2rem;
     margin-top: 0.65rem; 
 }
-.class_for_3-5_page{
+.class_for_3-5-9_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow:0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 14px;
     width: 13.2rem;
     height: 6.2rem;
@@ -213,6 +232,7 @@ button{
 .class_for_4_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow:0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 14px;
     display: flex;
     flex-direction: row-reverse;
@@ -237,6 +257,7 @@ button{
 .class_for_7_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow:0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 14px;
     width: 15.7rem;
     height: 3.8rem;
@@ -247,6 +268,7 @@ button{
 .class_for_6_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow:0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 14px;
     display: flex;
     flex-direction: row;
@@ -272,6 +294,7 @@ button{
 .class_for_9_page{
     border: 1px solid rgba(231, 235, 237, 0.80141);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow:0px 4px 10px rgba(0, 0, 0, 0.06);
     border-radius: 14px;
     width: 13.2rem;
     height: 6.2rem;
@@ -309,6 +332,9 @@ button{
 -----------------------------------------------------------------*/
 .page-final{
     width:100%;
+    background: -webkit-linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+    background: -o-linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
+    background: -moz-linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
     background: linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%);
     padding-top: 1rem;
     display: flex;
@@ -374,8 +400,12 @@ button{
 }
 .page-final__button>button{
     padding: 0.65rem 3.4rem;
+    background: -moz-linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+    background: -webkit-linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
+    background: -o-linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
     background: linear-gradient(270deg, #45C7FA 0%, #2196F3 100%);
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.03);
     border-radius: 24px;
 }
 .footer-final{

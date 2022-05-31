@@ -52,7 +52,7 @@ export let data = [
     },*/
     {
         quiestion:"Are you looking for any particular eyewear brands?",
-        answer:{option:["Yes, I have some in mind","No brand isn't important"]}
+        answer:{option:["Yes, I have some in mind","No brand isn't important"],imgPathmale:["",""],imgPathfemale:["",""],imgPathboth:["",""],}
     },/*
     {
         quiestion:"Choose your favorite brands",
