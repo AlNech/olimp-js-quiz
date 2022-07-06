@@ -2,6 +2,10 @@
 # Олимпиада Волга-ИТ Весна-2022
 Задание: Виджет для подбора очков.
 
+## Дизайн-макет
+https://www.figma.com/file/x4Q068APT8aUEl8gl8HXdv/VolgaIT-2022-(Copy)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
